@@ -1,7 +1,7 @@
 import input from 'input';
 
-function say(num) {
-    switch (num) {
+function say(i) {
+    switch (i) {
         case 0:
             console.log('Zero');
             break;
@@ -36,9 +36,10 @@ function say(num) {
 }
 
 async function main() {
-    const yourNum = await input.text('Enter a number');
-    const num = Number(yourNum);
-    say(num);
+    for (let i = 1; i <= 10; i += 1) {
+        //let iStri = i.toString();
+    say(i);
+    }
 }
 
-main();
+main(); 
